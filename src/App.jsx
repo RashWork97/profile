@@ -2,6 +2,7 @@ import './App.css'
 import ResumeDetail from './resumedetail'
 import ResumeGallery from './ResumeGallery'
 import ResumePic from './ResumePic'
+import ResumeSideInfo from './ResumeSideInfo'
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
           </div>
 
           <div className='col-span-1 col-start-1 row-span-30 border'>
+            <ResumeSideInfo/>
           </div>
 
-          <div className='col-span-7 col-start-5 row-start-1 row-span-50 border'>
+          <div className='col-span-7 col-start-5 row-start-1 row-span-50'>
             <ResumeGallery/>
           </div>
 

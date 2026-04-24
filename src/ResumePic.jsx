@@ -1,10 +1,10 @@
 import React from 'react'
+import img from "./assets/Pic2.jpg"
 
 export default function ResumePic() {
   return (
     <>
-    <h1 className='text-[10px] text-center p-15'>Image</h1>
-    <img></img>
+    <img src={img} alt="Profile" className='w-full h-full object-cover'/>
     </>
   )
 }
