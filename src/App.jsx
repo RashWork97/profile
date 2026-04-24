@@ -1,4 +1,7 @@
 import './App.css'
+import ResumeDetail from './resumedetail'
+import ResumeGallery from './ResumeGallery'
+import ResumePic from './ResumePic'
 
 function App() {
   return (
@@ -7,8 +10,24 @@ function App() {
       <div className="h-full bg-sky-400/10 rounded-lg shadow-lg p-4 font-corbel font-bold text-2xl text-left">
          My Profile
         <div className="bg-sky-100 backdrop-blur-xl grid grid-cols-10 gap-4">
-          <div className="col-span-1 col-start-2 row-span-10 border rounded-sm"></div>
-          <div className="col-span-3 col-start-5 row-span-40 border rounded-sm"></div>
+          <div className="col-span-1 col-start-1 row-span-10 border rounded-sm">
+            <ResumePic/>
+          </div>
+
+          <div className="col-span-3 col-start-2 row-span-40 border rounded-sm">
+            <ResumeDetail/>
+          </div>
+
+          <div className='col-span-1 col-start-1 row-span-30 border'>
+          </div>
+
+          <div className='col-span-7 col-start-5 row-start-1 row-span-50 border'>
+            <ResumeGallery/>
+          </div>
+
+          <div className='col-span-4 col-start-1 border row-span-10'>
+
+          </div>
         </div>
       </div>
     </div>
